@@ -5,7 +5,10 @@
   "scripts": {
     "build": "echo \"@prismatica/themes: build not implemented yet\"",
     "typecheck": "tsc -p tsconfig.json --pretty false",
-    "lint": "echo \"@prismatica/themes: lint not implemented yet\"",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\" \"tests/**/*.{ts,tsx}\" --max-warnings=0 --no-error-on-unmatched-pattern",
     "test": "echo \"@prismatica/themes: test not implemented yet\""
+  },
+  "devDependencies": {
+    "eslint": "^9.39.4"
   }
 }
