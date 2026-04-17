@@ -1,5 +1,10 @@
 {
   "name": "@prismatica/tokens",
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "echo \"@prismatica/tokens: build not implemented yet\"",
+    "lint": "echo \"@prismatica/tokens: lint not implemented yet\"",
+    "test": "echo \"@prismatica/tokens: test not implemented yet\""
+  }
 }

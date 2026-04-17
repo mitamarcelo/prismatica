@@ -1,5 +1,10 @@
 {
   "name": "@prismatica/components",
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "echo \"@prismatica/components: build not implemented yet\"",
+    "lint": "echo \"@prismatica/components: lint not implemented yet\"",
+    "test": "echo \"@prismatica/components: test not implemented yet\""
+  }
 }

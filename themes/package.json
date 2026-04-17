@@ -1,5 +1,10 @@
 {
   "name": "@prismatica/themes",
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "echo \"@prismatica/themes: build not implemented yet\"",
+    "lint": "echo \"@prismatica/themes: lint not implemented yet\"",
+    "test": "echo \"@prismatica/themes: test not implemented yet\""
+  }
 }

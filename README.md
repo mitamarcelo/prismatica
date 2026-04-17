@@ -31,6 +31,21 @@ This project is in an **early/incomplete** stage.
 	- [components/readme.md](components/readme.md)
 	- [utilities/readme.md](utilities/readme.md)
 
+## Development
+
+This repo uses **pnpm workspaces** + **Turborepo** to orchestrate tasks across all packages.
+
+- Turborepo config: [turbo.json](turbo.json)
+- Workspace packages are declared in [pnpm-workspace.yaml](pnpm-workspace.yaml)
+
+Run tasks across the monorepo:
+
+```sh
+pnpm -w build
+pnpm -w lint
+pnpm -w test
+```
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

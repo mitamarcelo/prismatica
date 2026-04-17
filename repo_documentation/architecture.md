@@ -34,6 +34,11 @@ prismatica/
 
 `pnpm-workspace.yaml` declares each of these directories as a workspace package.
 
+Task orchestration is handled by **Turborepo**:
+
+- Pipeline config: `turbo.json`
+- Root scripts: `pnpm -w build`, `pnpm -w lint`, `pnpm -w test`
+
 ## Packages overview
 
 All packages are currently present as workspace shells (each has a `package.json`).
@@ -192,6 +197,18 @@ The intended toolchain is:
 - Vitest + React Testing Library for tests
 - Storybook for documentation
 - Changesets + semantic versioning for release
+
+### Turborepo (implemented)
+
+Turborepo is installed and configured to orchestrate tasks across all workspace packages.
+
+- Configuration lives in `turbo.json`
+- The root package exposes:
+	- `pnpm -w build` → `turbo run build`
+	- `pnpm -w lint` → `turbo run lint`
+	- `pnpm -w test` → `turbo run test`
+
+As packages gain real build/lint/test implementations, Turbo will automatically run them in the correct order using `dependsOn: ["^<task>"]`.
 
 Key build expectations:
 
