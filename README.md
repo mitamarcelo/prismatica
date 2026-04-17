@@ -21,6 +21,16 @@ This project is in an **early/incomplete** stage.
 - **Accessible UI components** (e.g. Button/Input/Modal/Card) built on top of primitives.
 - **Documentation** (planned via Storybook) with examples, token docs, and theming guides.
 
+## Documentation
+
+- Architecture and package boundaries: [repo_documentation/architecture.md](repo_documentation/architecture.md)
+- Package-level docs (planned features):
+	- [tokens/readme.md](tokens/readme.md)
+	- [themes/readme.md](themes/readme.md)
+	- [primitives/readme.md](primitives/readme.md)
+	- [components/readme.md](components/readme.md)
+	- [utilities/readme.md](utilities/readme.md)
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
