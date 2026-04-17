@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "echo \"@prismatica/components: build not implemented yet\"",
+    "typecheck": "tsc -p tsconfig.json --pretty false",
     "lint": "echo \"@prismatica/components: lint not implemented yet\"",
     "test": "echo \"@prismatica/components: test not implemented yet\""
   }

@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "moduleDetection": "force",
+
+    "jsx": "react-jsx",
+
+    "strict": true,
+
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    "noEmit": true,
+    "paths": {
+      "@prismatica/tokens": ["./tokens/src/index.ts"],
+      "@prismatica/tokens/*": ["./tokens/src/*"],
+
+      "@prismatica/themes": ["./themes/src/index.ts"],
+      "@prismatica/themes/*": ["./themes/src/*"],
+
+      "@prismatica/primitives": ["./primitives/src/index.ts"],
+      "@prismatica/primitives/*": ["./primitives/src/*"],
+
+      "@prismatica/components": ["./components/src/index.ts"],
+      "@prismatica/components/*": ["./components/src/*"],
+
+      "@prismatica/utilities": ["./utilities/src/index.ts"],
+      "@prismatica/utilities/*": ["./utilities/src/*"]
+    }
+  }
+}
