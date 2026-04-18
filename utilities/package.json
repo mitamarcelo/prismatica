@@ -2,13 +2,29 @@
   "name": "@prismatica/utilities",
   "version": "0.0.0",
   "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
-    "build": "echo \"@prismatica/utilities: build not implemented yet\"",
+    "build": "vite build",
     "typecheck": "tsc -p tsconfig.json --pretty false",
     "lint": "eslint \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\" \"tests/**/*.{ts,tsx}\" --max-warnings=0 --no-error-on-unmatched-pattern",
     "test": "echo \"@prismatica/utilities: test not implemented yet\""
   },
   "devDependencies": {
-    "eslint": "^9.39.4"
+    "@types/node": "^24.0.0",
+    "eslint": "^9.39.4",
+    "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4"
   }
 }

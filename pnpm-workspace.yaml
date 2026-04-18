@@ -4,3 +4,5 @@ packages:
   - 'themes'
   - 'tokens'
   - 'utilities'
+allowBuilds:
+  esbuild: true

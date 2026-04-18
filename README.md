@@ -11,7 +11,7 @@ It is intended to be **customizable**, **accessible**, and **SSR-friendly**, bui
 This project is in an **early/incomplete** stage.
 
 - The implementation is still in progress.
-- **All major features/components are still to be done** (primitives, components, docs, tests, build/release automation, etc.).
+- **All major features/components are still to be done** (primitives, components, docs, tests, release automation, etc.).
 
 ## Goals
 
@@ -34,6 +34,8 @@ This project is in an **early/incomplete** stage.
 ## Development
 
 This repo uses **pnpm workspaces** + **Turborepo** to orchestrate tasks across all packages.
+
+Package builds use **Vite library mode** and output ESM (`.mjs`), CommonJS (`.cjs`), and TypeScript declarations (`.d.ts`) to each package's `dist/` directory.
 
 - Turborepo config: [turbo.json](turbo.json)
 - Workspace packages are declared in [pnpm-workspace.yaml](pnpm-workspace.yaml)
